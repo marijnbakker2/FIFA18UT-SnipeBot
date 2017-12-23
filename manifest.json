@@ -1,0 +1,25 @@
+{
+    "manifest_version": 1,
+    "name": "snipeybot",
+    "description": "Snipeybot OP.",
+    "homepage_url": "https://github.com/marijnbakker2/snipeybot",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+       "128": "icon.png"
+    },
+    "version": "1",
+    "content_scripts": [
+        {
+            "matches": ["https://www.easports.com/*fifa/ultimate-team/web-app/*", "http://www.easports.com/*fifa/ultimate-team/web-app/*"],
+            "js": ["script.js"]
+        }
+    ],
+    "browser_action": {
+        "default_icon": {
+            "16": "icon.png",
+            "24": "icon.png",
+            "32": "icon.png"
+        }
+    }
+}
